@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="38.7dp"
+        android:background="#57585B"
+        android:minHeight="25px"
+        android:minWidth="25px"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/btnBackArticle"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="#1290BD"
+            android:src="@drawable/btnbackarticleclickedxml" />
+        
+      <TextView 
+           android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:text="Attini Comms"
+         android:textColor="@color/White"
+         android:id="@+id/txtNewsArticleMainTitle"
+         android:textSize="20dp"
+         android:layout_centerInParent="true"
+          
+          />
+        
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollNews"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/white" >
+
+        <!-- android:layout_weight="4" -->
+
+
+        <!-- Main  vertical LinearLayout -->
+
+        <LinearLayout
+            android:id="@+id/layoutList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:padding="10dp" >
+
+                <TextView
+                    android:id="@+id/labelPub"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Published by: "
+                    android:textColor="#97999C" />
+
+                <TextView
+                    android:id="@+id/txtPublisher"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/labelPub"
+                    android:text="publisher"
+                    android:textColor="#FF3C6FA6" />
+
+                <TextView
+                    android:id="@+id/txtCatagory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:text="Catagory"
+                    android:textColor="#97999C"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:weightSum="10" >
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dip"
+                    android:layout_marginTop="0.5dp"
+                    android:layout_weight="2"
+                    android:background="#E6E6E6" />
+
+                <View
+                    android:id="@+id/viewNewsCatagory"
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dip"
+                    android:layout_marginTop="0.5dp"
+                    android:layout_weight="8"
+                    android:background="#E6E6E6" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtNewsTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:padding="10dp"
+                android:text="Large Text"
+                android:textAlignment="center"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <!-- Layout for Date, Likes, comments and views -->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:padding="10dp" >
+
+                <LinearLayout
+                    android:layout_width="98dp"
+                    android:layout_height="15dp"
+                    android:background="#FF3C6FA6"
+                    android:weightSum="10" >
+
+                    <TextView
+                        android:id="@+id/txtPubDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="2"
+                        android:text="date"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#F8F8F8"
+                        android:textSize="11sp" />
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/viewDate"
+                    android:layout_width="16dp"
+                    android:layout_height="15dp"
+                    android:background="#E6E6E6" />
+
+                <ImageButton
+                    android:id="@+id/btnViews"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@color/white"
+                    android:src="@drawable/views_selected" />
+
+                <TextView
+                    android:id="@+id/txtNewsViews"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="view"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#FF3C6FA6" />
+
+                <ImageButton
+                    android:id="@+id/btnComments"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/white"
+                    android:src="@drawable/comments_selected" />
+
+                <TextView
+                    android:id="@+id/txtNewsComments"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:text="view"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#FF3C6FA6" />
+
+                <ImageButton
+                    android:id="@+id/btnLikes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:background="@color/white"
+                    android:src="@drawable/thumps_upselect" />
+
+                <TextView
+                    android:id="@+id/txtNewsLikes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:text="view"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#FF3C6FA6" />
+            </LinearLayout>
+
+       <LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1.0"
+    android:padding="10dp">
+            <WebView
+                android:id="@+id/txtNewsBody"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:padding="20dp" />
+</LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:padding="10dp" >
+
+                <ImageButton
+                    android:id="@+id/btnViews"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@color/white"
+                    android:src="@drawable/views_selected" />
+
+                <TextView
+                    android:id="@+id/txtNewsViews2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="view"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#FF3C6FA6" />
+
+                <ImageButton
+                    android:id="@+id/btnComments"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/white"
+                    android:src="@drawable/comments_selected" />
+
+                <TextView
+                    android:id="@+id/txtNewsComments2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="view"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#FF3C6FA6" />
+
+                <ImageButton
+                    android:id="@+id/btnLikes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:background="@color/white"
+                    android:src="@drawable/thumps_upselect" />
+
+                <TextView
+                    android:id="@+id/txtNewsLikes2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="view"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#FF3C6FA6" />
+            </LinearLayout>
+
+            <Utility.HorizontalListView
+                android:id="@+id/horizontallistview"
+                android:layout_width="fill_parent"
+                android:layout_height="20dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignTop="@+id/commLay"
+                android:layout_marginLeft="20dp" >
+            </Utility.HorizontalListView>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp" >
+
+                <LinearLayout
+                    android:id="@+id/commLay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <ImageButton
+                        android:id="@+id/btnComms"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:background="#80000000"
+                        android:src="@drawable/comments_button_selected" />
+
+                    <ImageButton
+                        android:id="@+id/btnAddComms"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/white"
+                        android:src="@drawable/btnaddcommspressedxml" />
+
+                    <ImageButton
+                        android:id="@+id/btnAddLikes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:background="@color/white"
+                        android:src="@drawable/btnlikepressedxml" />
+                </LinearLayout>
+
+                <ListView
+                    android:id="@+id/android:list"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/commLay"
+                    android:layout_gravity="bottom"
+                    android:divider="#b5b5b5"
+                    android:dividerHeight="1dp"
+                    android:listSelector="@android:color/transparent"
+                    android:padding="10dp"
+                    android:scrollbars="none"
+                    android:visibility="invisible" />
+                <!-- android:layout_weight="6" -->
+
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

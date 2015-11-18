@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+           
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:foreground="@drawable/foreground_selector"
+              android:id="@+id/layoutOfStagGridView">
+
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/White"
+    android:orientation="vertical"
+    android:padding="30dip" 
+   
+    >
+
+ 
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        android:text="title"
+        android:textColor="#040404"
+        android:textSize="18dip"
+        android:textStyle="bold" />
+
+    
+     <RelativeLayout
+        android:id="@+id/imgeRel"
+         android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        >
+  
+       <!--  <com.etsy.android.grid.util.DynamicHeightImageView
+        android:id="@+id/imgViewDynamic"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop" /> --> 
+        
+  <!-- <ImageView 
+             android:id="@+id/imgViewDynamic"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop" 
+            /> -->
+            <Utility.ScaleImageView
+        android:id="@+id/imageView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@null" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_below="@+id/list_image"
+        android:layout_width="100dp"
+        android:layout_height="18dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/list_image"
+        android:layout_alignTop="@+id/list_image"
+        android:background="#FF3C6FA6"
+       >
+
+        <View 
+            android:layout_width="14dp"
+            android:layout_height="18dp"
+            android:background="@color/White"
+            android:id="@+id/viewdate"
+            />
+        
+        <TextView
+            android:id="@+id/txtPubDate"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/white"
+            android:textSize="13sp" />
+    </LinearLayout>
+</RelativeLayout>
+    
+    <!-- Artist Name -->
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        
+        android:layout_marginTop="10dip"
+        android:text="description"
+        android:textColor="#343434"
+        android:textSize="15dip" />
+
+   <LinearLayout 
+         android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+       >
+    
+       <ImageView 
+           android:layout_width="15dp"
+           android:layout_height="15dp"
+           android:id="@+id/imgLike"
+           android:src="@drawable/like"
+          
+           />
+       
+       <TextView 
+          android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtlike" 
+        android:text="10"
+        android:textColor="#B2B2B2"
+        android:layout_marginLeft="3dp"
+        android:textSize="13dp"
+           />
+       
+        <ImageView 
+           android:layout_width="15dp"
+           android:layout_height="15dp"
+           android:id="@+id/imgLike"
+           android:src="@drawable/comment"
+           android:layout_marginLeft="5dp"
+           android:layout_marginTop="2dp"
+           
+          
+           />
+        <TextView 
+          android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtcomm" 
+        android:text="10"
+        android:textColor="#B2B2B2"
+        android:layout_marginLeft="3dp"
+        android:textSize="13dp"
+           />
+       
+         <ImageView 
+           android:layout_width="15dp"
+           android:layout_height="15dp"
+           android:id="@+id/imgLike"
+           android:src="@drawable/view"
+           android:layout_marginLeft="5dp"
+           
+           />
+         
+         <TextView 
+          android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtview" 
+        android:text="10"
+        android:textColor="#B2B2B2"
+        android:layout_marginLeft="3dp"
+        android:textSize="13dp"
+           />
+       
+       
+   </LinearLayout>
+   
+</LinearLayout>
+</FrameLayout>

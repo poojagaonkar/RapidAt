@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.zeven.attini"
+    android:versionCode="2"
+    android:versionName="1.0" 
+    >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="19" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+     <uses-permission android:name="android.permission.CLEAR_APP_CACHE"/>
+    
+     <supports-screens
+            android:smallScreens="true"
+            android:normalScreens="true"
+            android:largeScreens= "true"
+            android:anyDensity="true"
+    />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/attinicommslogo1"
+        android:label="@string/app_name"
+        android:theme="@style/MyHoloLightTheme"  >
+        <activity
+            android:name="com.zevenpooja.attini.Login"
+            android:label="@string/app_name" 
+            android:configChanges="orientation|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+     
+                <activity
+            android:name="com.zevenpooja.attini.NewsDetails"
+            android:label="@string/app_name" 
+            android:configChanges="orientation|screenSize">
+           
+         
+        </activity>
+         <activity
+            android:name="com.zevenpooja.attini.Details1"
+            android:label="@string/app_name" 
+            android:configChanges="orientation|screenSize">
+           
+         
+        </activity>
+         <activity
+            android:name="com.zevenpooja.attini.Home"
+            android:label="@string/app_name" 
+            android:logo="@drawable/hamburger_button"
+            android:configChanges="orientation|screenSize">
+            
+            
+         
+        </activity>
+          <activity
+            android:name="com.zevenpooja.attini.temp"
+            android:label="@string/app_name" >
+            
+            
+         
+        </activity>
+         <activity
+            android:name="com.zevenpooja.attini.DrawerActivity"
+            android:label="@string/app_name" >
+            
+            
+         
+        </activity>
+    </application>
+
+</manifest>

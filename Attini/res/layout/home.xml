@@ -1,0 +1,57 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:background="#F5F5F5">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="38.7dp"
+        android:id="@+id/linearLayout1"
+        android:background="#1290BD">
+      
+
+        <TextView
+            android:id="@+id/txtNewsTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="10sp"
+            android:text="Welcome "
+            android:textColor="@color/white"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+     
+
+        <TextView
+            android:id="@+id/txtUsersName"
+            android:text="user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:layout_marginTop="10sp"
+               android:textColor="@color/white"
+              android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    </LinearLayout>
+    
+    <View
+        android:layout_width="5dip"
+        android:layout_height="fill_parent"
+        android:background="#1290BD"/>
+
+     <ListView
+        android:id="@+id/android:list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/getdata" 
+         android:divider="#b5b5b5"
+        android:dividerHeight="1dp"
+        android:drawSelectorOnTop="true"
+        android:listSelector="@drawable/list_selector"
+        android:padding="5dp"/>
+ 
+</LinearLayout>

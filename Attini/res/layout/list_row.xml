@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="5dip" >
+ 
+    <!--  ListRow Left sied Thumbnail image -->
+      <FrameLayout android:id="@+id/thumbnail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="3dip"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="5dip">
+
+        <ImageView
+            android:id="@+id/list_image"
+          android:layout_width="150dp"
+            android:layout_height="wrap_content"
+             android:adjustViewBounds="true"  
+ 			 android:maxWidth="150dp"  
+  			android:maxHeight="120dp"  
+ 			 android:scaleType="fitCenter"  
+  			 android:src="@drawable/ic_launcher"/> 
+            
+        
+        <LinearLayout
+                android:layout_width="98dp"
+                android:layout_height="20dp"
+                android:background="#FF3C6FA6" 
+                android:layout_marginTop="8dp"
+                android:layout_gravity="left|bottom">
+
+            <TextView
+            android:id="@+id/txtPubDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+          android:layout_marginLeft="20dp"
+            android:layout_gravity="center_horizontal"
+            android:padding="3dip"
+            android:text="date"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#FFFFFF"
+            android:textSize="10sp" />
+               
+
+            </LinearLayout>
+
+             <View
+                 android:id="@+id/viewDate"
+                 android:layout_width="16dp"
+                 android:layout_height="20dp"
+                android:layout_gravity="left|bottom"
+                 android:background="#E6E6E6" />
+        
+ 
+         
+ 
+    </FrameLayout>
+ 
+ 
+    <!-- Title Of Song-->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/thumbnail"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:layout_marginLeft="10dp"
+        android:textColor="#040404"
+        android:typeface="sans"
+        android:textSize="15dip"
+        android:textStyle="bold"/>
+ 
+    <!-- Artist Name -->
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:textColor="#343434"
+         android:layout_marginLeft="10dp"
+        android:textSize="12dip"
+        android:layout_marginTop="1dip"
+        android:layout_toRightOf="@+id/thumbnail"
+       />
+
+    <LinearLayout
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+       android:layout_below="@+id/thumbnail"
+        android:layout_alignParentBottom="true" 
+        android:padding="3dip"
+        android:layout_alignParentLeft="true">
+
+        <TextView
+            android:id="@+id/txtPubDate"
+            android:text=""
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#97999C" />
+    </LinearLayout>
+ 
+</RelativeLayout>

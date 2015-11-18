@@ -1,0 +1,109 @@
+<android.support.v4.widget.DrawerLayout
+  	android:id="@+id/drawer_layout"
+  	xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+ 
+
+     
+    
+    <!-- Framelayout to display Fragments -->
+    <FrameLayout
+        android:id="@+id/frame_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" />
+    
+    <ScrollView
+    android:id="@+id/left_drawer"
+    android:layout_height="fill_parent"
+    android:layout_width="240dp"
+    android:orientation="vertical"
+   android:layout_gravity="start"
+   android:background="#1290BD">
+   
+         <LinearLayout
+    android:id="@+id/left_drawer1"
+    android:layout_height="fill_parent"
+    android:layout_width="240dp"
+    android:orientation="vertical"
+   android:layout_gravity="start"
+   android:background="#1384AD">
+    
+    
+    <TextView
+        android:id="@+id/txtUserDrawer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    
+    
+    <LinearLayout 
+           android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#1384AD"
+        android:padding="10dp">
+        
+        <TextView 
+            android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Featured"
+        android:textColor="@color/White"/>
+        
+    </LinearLayout>
+ 
+    <!-- Listview to display slider menu -->
+  
+    <ListView
+        android:id="@+id/list_slidermenu"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:choiceMode="singleChoice"
+		android:listSelector="@drawable/list_selector"
+        android:background="#1290BD"/>
+    
+        
+        
+        <LinearLayout 
+           android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#1384AD"
+        android:padding="10dp">
+        
+        <TextView 
+            android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Most popular"
+        android:textColor="@color/White"/>
+        
+        
+        
+    </LinearLayout>
+    
+          <ListView
+        android:id="@+id/list_slidermenu2"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:choiceMode="singleChoice"
+		android:listSelector="@drawable/list_selector"
+        android:background="#1290BD"/>
+          
+          
+          <View 
+            android:layout_height="2dp"
+            android:layout_width="fill_parent"
+            />
+          
+          <ListView
+        android:id="@+id/list_slidermenu3"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:choiceMode="singleChoice"
+		android:listSelector="@drawable/list_selector"
+        android:background="#1290BD"/>
+          
+          </LinearLayout>
+        
+        
+        </ScrollView>
+       
+</android.support.v4.widget.DrawerLayout>

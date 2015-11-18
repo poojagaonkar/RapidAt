@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.LIBRARIES"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.DEPENDENCIES"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="gen"/>
+	<classpathentry exported="true" kind="lib" path="F:/My Stuff/Imp/Projects/Libraries/Java/android-async-http-1.4.4.jar"/>
+	<classpathentry exported="true" kind="lib" path="F:/My Stuff/Imp/Projects/Libraries/Java/google-gson-2.2.4/gson-2.2.4.jar"/>
+	<classpathentry exported="true" kind="lib" path="F:/My Stuff/Imp/Projects/Libraries/Java/guava-17.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="F:/My Stuff/Imp/Projects/Libraries/Java/NewJson/jackson-annotations-2.2.3.jar"/>
+	<classpathentry exported="true" kind="lib" path="F:/My Stuff/Imp/Projects/Libraries/Java/NewJson/jackson-core-2.2.3.jar"/>
+	<classpathentry exported="true" kind="lib" path="F:/My Stuff/Imp/Projects/Libraries/Java/NewJson/jackson-databind-2.2.3.jar"/>
+	<classpathentry exported="true" kind="lib" path="F:/My Stuff/Imp/Projects/Libraries/Java/json-simple-1.1.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="F:/My Stuff/Imp/Projects/Libraries/Java/jsoup-1.6.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="F:/My Stuff/Imp/Projects/Libraries/Java/lambdaj-2.4.jar"/>
+	<classpathentry exported="true" kind="lib" path="F:/My Stuff/Imp/Projects/Libraries/Java/quick-json-1.0.2.jar"/>
+	<classpathentry kind="output" path="bin/classes"/>
+</classpath>

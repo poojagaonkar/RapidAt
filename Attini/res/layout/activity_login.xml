@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/attiniback">
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="195dp"
+        android:src="@drawable/attinicropped" />
+
+    <LinearLayout
+        android:id="@+id/LoginBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250dp"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="290dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="#FFFFFF"
+            android:ems="10"
+            android:hint="Email Address"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:singleLine="true" >
+
+            <requestFocus />
+        </EditText>
+
+        <ImageButton
+            android:id="@+id/button2"
+            android:layout_width="105dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:background="#80FFFFFF"
+            android:src="@drawable/btnloginclickedxml" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
